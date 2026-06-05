@@ -21,7 +21,7 @@
   @media print {
     body { background: white; }
     .no-print { display: none; }
-    .page { box-shadow: none; margin: 0; max-width: 100%; }
+
   }
 
   body {
@@ -29,7 +29,6 @@
     font-family: 'DM Sans', sans-serif;
     color: var(--ink);
     min-height: 100vh;
-    padding: 40px 20px;
     display: flex;
     justify-content: center;
   }
@@ -37,21 +36,20 @@
   .page {
     background: var(--paper);
     width: 100%;
-    max-width: 860px;
     position: relative;
     box-shadow: 8px 8px 0 #a09880, 16px 16px 0 #887e6e;
   }
 
   /* Top strip */
   .accent-strip {
-    height: 6px;
+    height: 16px;
     background: var(--accent);
     width: 100%;
   }
 
   /* Header */
   header {
-    padding: 48px 56px 36px;
+    padding: 10px 10% 36px;
     border-bottom: 1.5px solid var(--rule);
     display: grid;
     grid-template-columns: 1fr auto;
@@ -107,18 +105,21 @@
   /* Body layout */
   .body {
     display: grid;
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 380px 100px;
+    background: #ede7d9;
+
   }
 
   /* Main column */
   .main {
-    padding: 40px 48px 48px 56px;
+    background: white;
+    padding: 48px 48px 48px 15%;
     border-right: 1.5px solid var(--rule);
   }
 
   /* Sidebar */
   .sidebar {
-    padding: 40px 36px 48px;
+    padding: 40px 15% 25% 48px;
     background: #ede7d9;
   }
 
@@ -301,7 +302,7 @@
   /* Print button */
   .print-btn {
     position: fixed;
-    bottom: 24px;
+    bottom: 50px;
     right: 24px;
     background: var(--accent);
     color: white;
@@ -350,9 +351,9 @@
       <section class="summary">
         <div class="section-title"><span class="num">01</span> Perfil</div>
         <p>
-          Desarrollador <strong>Full Stack</strong> con experiencia en la construcción de aplicaciones web y móviles modernas. 
-          Especializado en el ecosistema <strong>Python/Django</strong> para backend y <strong>React/React Native</strong> para frontend. 
-          Capaz de diseñar arquitecturas SPA, APIs REST y sistemas con lógica de gamificación aplicada a contextos educativos. 
+          Desarrollador <strong>Full Stack</strong> con experiencia en la construcción de aplicaciones web y móviles modernas.
+          Especializado en el ecosistema <strong>Python/Django</strong> para backend y <strong>React/React Native</strong> para frontend.
+          Capaz de diseñar arquitecturas SPA, APIs REST y sistemas con lógica de gamificación aplicada a contextos educativos.
           Orientado a soluciones funcionales, código organizado y experiencia de usuario cuidada.
         </p>
       </section>
@@ -433,9 +434,9 @@
       <section>
         <div class="section-title"><span class="num">03</span> Enfoque de Desarrollo</div>
         <p style="font-size:13px; line-height:1.8; color:#2a2520; font-weight:300;">
-          Aplica <strong>arquitecturas modulares</strong> con separación clara de responsabilidades (estado, UI, lógica). 
-          Usa <strong>patrones de diseño</strong> como Singleton, Observer, Module y Strategy en proyectos JavaScript. 
-          Construye <strong>APIs REST</strong> con Django Rest Framework y consume datos desde React. 
+          Aplica <strong>arquitecturas modulares</strong> con separación clara de responsabilidades (estado, UI, lógica).
+          Usa <strong>patrones de diseño</strong> como Singleton, Observer, Module y Strategy en proyectos JavaScript.
+          Construye <strong>APIs REST</strong> con Django Rest Framework y consume datos desde React.
           Diseña interfaces responsivas con <strong>TailwindCSS</strong> y maneja bases de datos relacionales y no relacionales (<strong>MySQL, MongoDB</strong>).
         </p>
       </section>
@@ -445,18 +446,6 @@
     <!-- Sidebar -->
     <div class="sidebar">
 
-      <!-- Stats -->
-      <section>
-        <div class="section-title"><span class="num">—</span> GitHub</div>
-        <div class="stat-block">
-          <div class="stat-label">Repositorios</div>
-          <div class="stat-value">29</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-label">Estado</div>
-          <div class="stat-value" style="font-size:15px; padding-top:2px;">Disponible</div>
-        </div>
-      </section>
 
       <!-- Stack Backend -->
       <section>
@@ -527,6 +516,13 @@
             <a href="https://www.facebook.com/breyner.u/" target="_blank">breyner.u</a>
           </span>
         </div>
+        <div class="contact-item">
+                  <span class="contact-label">Correo</span>
+                  <span class="contact-value">
+                    <a href="mailto:breynersmithustariz@gmail.com" target="_blank">breynersmithustariz@gmail.com</a>
+                  </span>
+                </div>
+
 
         <div class="contact-item">
           <span class="contact-label">Ubicación</span>
@@ -538,8 +534,8 @@
   </div>
 
   <div class="bottom-bar">
-    <span>Breyner Ustariz</span>
-    <span>Full Stack Developer · 2025</span>
+    <span>Breyner Esmith Ustariz Hoyos</span>
+    <span>Full Stack Developer</span>
   </div>
 </div>
 
